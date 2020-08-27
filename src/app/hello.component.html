@@ -1,0 +1,9 @@
+<h1>test<h1>
+
+<div class="grid-container">
+  <div class="cell-container" *ngFor="let cell of cellCount; let i = index">
+    <div class="cell" [class.selected]="positionSelected == i" [class.prev-selected]="previousPosition == i" (click)="moveBall(i)">
+      <div></div>
+    </div>
+  </div>
+</div>
